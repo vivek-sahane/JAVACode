@@ -1,7 +1,6 @@
 import java.util.*;
 
 public class arraylec3p4 {  //find which number is first repeated
-
         public static int RepeatingNumber(int arr[]){
 
             int n= arr.length ;

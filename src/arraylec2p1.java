@@ -4,11 +4,10 @@ public class arraylec2p1 { // if sorted then print true
 
     public static boolean isSorted(int arr[]){
 
-        boolean check = true ;
-        for(int i = 1 ; i< arr.length ; i++){
-            if(arr[i]< arr[i-1]){
-                //not sorted
-               return false ;
+        for (int i = 0; i < arr.length - 1; i++) {
+            if (arr[i] > arr[i + 1]) {
+                // If current element is greater than the next one, array is not sorted
+                return false;
             }
         }
         return true;
@@ -22,7 +21,7 @@ public class arraylec2p1 { // if sorted then print true
         for(int i =0 ; i< arr.length ; i++) {
             arr[i] = sc.nextInt();
         }
-            System.out.println("isSorted"+ isSorted(arr));
+            System.out.println(isSorted(arr));
 
         }
     }

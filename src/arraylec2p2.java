@@ -2,10 +2,12 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class arraylec2p2 { //print sorted array
-    public static void smallestAndLargestElement(int arr[]){
+    public static void sortArray(int arr[]){
         Arrays.sort(arr);
         for(int i =0 ; i<arr.length ;i++){
+
             System.out.print(arr[i]);
+
         }
     }
     public static void main(String[] args) {
@@ -18,6 +20,6 @@ public class arraylec2p2 { //print sorted array
             arr[i] = sc.nextInt();
 
         }
-        smallestAndLargestElement(arr);
+        sortArray(arr);
     }
 }

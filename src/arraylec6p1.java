@@ -12,19 +12,19 @@ public class arraylec6p1 {   //prefix sum
     }
     public static int [] PrefixSum(int arr[]){   // method one
         int n=arr.length ;
-        int []pref = new int [n];
+        int []pref = new int[n];
          pref[0]= arr[0];
         for(int i=0 ;i< n ;i++){
             pref[i]= pref[i-1] + arr[i];
         }
         return pref ;
     }
-    public static int[] makePrefixSum(int arr[]){    //method two
-      for (int i=0 ; i<arr.length ;i++){
-          arr[i]=arr[i]+ arr[i-1];
-      }
-      return arr;
-    }
+    public static int[] makePrefixsumArray(int[]arr){
+        for (int i=0;i< arr.length ;i++){
+            arr[i] += arr[i-1] ;
+              }
+             return arr ;
+        }
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -37,7 +37,7 @@ public class arraylec6p1 {   //prefix sum
         }
         System.out.println("Original Array");
         printArray(arr);
-        makePrefixSum(arr) ;                              //calling function
+        makePrefixsumArray(arr) ;                              //calling function
         System.out.print("Array after prefix sum");
         printArray(arr);
     }
