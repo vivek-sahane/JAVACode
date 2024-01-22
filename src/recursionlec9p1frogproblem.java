@@ -6,7 +6,6 @@ public class recursionlec9p1frogproblem {
         int op1 = Math.abs(h[idx]-h[idx+1])+best(h,n,idx+1);
 
         if(idx==n-2)return op1;
-
         int op2 = Math.abs(h[idx]-h[idx+2])+best(h,n,idx+2);
 
         return Math.min(op1 , op2);

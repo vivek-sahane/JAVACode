@@ -2,10 +2,6 @@ import java.util.Scanner;
 
 public class Hackerrank_isPalindrome {
 
-
-
-
-
         public static void main(String[] args) {
             Scanner scanner = new Scanner(System.in);
 
