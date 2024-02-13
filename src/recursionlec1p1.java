@@ -1,6 +1,6 @@
 import java.util.*;               //print natural no. from 1 to n
 
-public class recursionlec1p1 {
+public class recursionlec1p1 {        //Print elements from 1 to n.
 
     static void printIncreasing(int n){
 

@@ -1,4 +1,4 @@
-public class recursionlec9p1frogproblem {
+public class recursionp14frogproblem {
 
     static int best(int[]h, int n, int idx){
 
