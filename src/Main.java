@@ -2,16 +2,25 @@ import java.util.Scanner;
 
 public class Main {
 
-    static int[][]pasclesTri(int n) {
+    public static void main(String[] args) {
 
-       int [][]ans=new int[n][];
-       for(int i=0;i<n;i++){
-           ans[i]=new int[i+1];
-           ans[i][0]=ans[i][i]=1;
-           for(int j=1 ; j<i ; j++){
-               ans[i][j]= ans[i-1][j]+ans[i-1][j-1];
-           }
-       }
-       return ans;
-    }
+        String str="aaabbbbccee";
+        String ans=" "+str.charAt(0);
+        int count=1;
+        for(int i=1;i<str.length();i++){
+            char curr =str.charAt(i);
+            char prev =str.charAt(i-1);
+            if(curr==prev){
+               count++;
+            }
+            else{
+                ans+=count;
+                count=1;
+                ans+=curr;
+            }
+        }
+        if(count>1)ans+=count;
+        System.out.println(ans);
+   }
 }
+

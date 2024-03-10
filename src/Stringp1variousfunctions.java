@@ -7,7 +7,6 @@ public class Stringp1variousfunctions {
 
         // Remove non-alphanumeric characters and convert to lowercase
       //   String processedString = s.replaceAll("[^a-zA-Z0-9]", "").toLowerCase();
-
         System.out.println(str.length());
         System.out.println(str.charAt(2));
         System.out.println(str.indexOf('l'));

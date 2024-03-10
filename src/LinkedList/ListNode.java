@@ -191,7 +191,7 @@
 //        }
 //        return head;
 //    }
-//    public ListNode deleteDuplicates(ListNode head) {          //P11 Remove Duplicates medium level
+//    public ListNode deleteDuplicates1(ListNode head) {          //P11 Remove Duplicates medium level
 //        if (head == null || head.next == null)
 //            return head;
 //
