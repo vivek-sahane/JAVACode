@@ -9,8 +9,8 @@ public class sortinglec6quick {
     static void swap(int arr[] , int x  , int y){
 
         int temp = arr[x] ;
-               arr[x] = arr[y] ;
-              arr[y] = temp ;
+        arr[x] = arr[y] ;
+        arr[y] = temp ;
     }
     static int partition (int[]arr , int st , int end ){
 
