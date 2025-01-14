@@ -83,9 +83,6 @@ class Binary {
         return root;
     }
 
-
-
-
     public boolean search(Node root, int a) {
         if (root == null) {
             return false;

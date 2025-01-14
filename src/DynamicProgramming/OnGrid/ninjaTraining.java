@@ -1,6 +1,5 @@
-package DynamicProgramming;
+package DynamicProgramming.OnGrid;
 
-import java.util.*;
 public class ninjaTraining {
 
         // Function to find the maximum points for ninja training
